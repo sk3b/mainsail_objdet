@@ -16,7 +16,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 # Initialize YOLO model
-model = YOLO("my_model.pt")
+model = YOLO("best.mnn")
 labels = model.names
 
 # Initialize webcam
